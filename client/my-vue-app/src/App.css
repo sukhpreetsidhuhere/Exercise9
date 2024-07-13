@@ -1,0 +1,169 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #333;
+}
+
+/* Container for the whole app */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #0e19ec;
+}
+
+/* Styling for the horizontal navbar */
+.horizontal-navbar {
+  background-color: #007bff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.horizontal-navbar ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.horizontal-navbar li {
+  margin-left: 20px;
+}
+header{
+  padding-right: 40%;
+  color:#c82333
+}
+.horizontal-navbar li:first-child {
+  margin-left: auto;
+}
+
+.horizontal-navbar a {
+  text-decoration: none;
+  color: #0056b3 ;
+  padding: 10px 15px;
+  border-radius: 4px;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+.horizontal-navbar a:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Styling for the main content */
+.content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Content wrapper to center the main content */
+.content-wrapper {
+  background-color: #0056b3;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 800px;
+}
+
+/* Styling for the notes list */
+h1 {
+  margin-bottom: 20px;
+  color: #007bff;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background-color: #0056b3;
+  margin-bottom: 15px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+li:hover {
+  transform: translateY(-5px);
+}
+
+h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #0056b3;
+}
+
+p {
+  margin-bottom: 10px;
+  color: #0e19ec;
+}
+
+button {
+  background-color: #dc3545;
+  color: #fff;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+  background-color: #c82333;
+  transform: scale(1.05);
+}
+nav{
+  padding-right: 40%;
+}
+/* Styling for the add note form */
+form {
+  margin-top: 20px;
+}
+
+form h2 {
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: #007bff;
+}
+
+form input[type="text"],
+form textarea {
+  width: calc(100% - 30px);
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus,
+form textarea:focus {
+  border-color: #007bff;
+}
+
+form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+form button.add-note {
+  background-color: #28a745;
+  margin-top: 10px;
+}
+
+form button.add-note:hover {
+  background-color: #218838;
+}
